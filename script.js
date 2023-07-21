@@ -68,3 +68,39 @@ resetsw.addEventListener("click", ()=>{
   title.innerHTML = "stopwatch " + sw;
 })
 
+// to do list
+
+const search = document.querySelector(".search");
+const submit = document.querySelector(".submit");
+const lists = document.querySelector(".lists");
+
+submit.addEventListener("click", (e)=>{
+  let list = search.value;
+  if(!list){
+    alert("not empty")
+  }
+  else {
+
+    let liEl = document.createElement("li");
+    let butoonEl = document.createElement("button");
+
+    liEl.innerHTML = list;
+
+    butoonEl.innerHTML = "delete";
+
+    liEl.appendChild(butoonEl);
+
+    lists.appendChild(liEl);
+
+    search.value = "";
+
+    butoonEl.addEventListener("click", ()=>{
+      liEl.remove();
+    })
+
+    liEl.addEventListener("click", ()=>{
+        liEl.classList.toggle("strike");
+    })
+  }
+})
+
