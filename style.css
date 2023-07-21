@@ -1,0 +1,15 @@
+body{
+    background-color: cornflowerblue;
+}
+.container{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:#fff ;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 2px lightblue;
+}
