@@ -13,3 +13,12 @@ body{
     border-radius: 20px;
     box-shadow: 0 0 2px lightblue;
 }
+.lists li{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.lists li.strike{
+    text-decoration: line-through;
+}
+
